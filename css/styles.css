@@ -57,6 +57,7 @@ button {
 }
 
 .navigation-webstudio {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .nav-header {
@@ -70,6 +71,7 @@ button {
   padding-top: 24px;
   padding-bottom: 24px;
   display: inline-block;
+  align-items: center;
 }
 
 .link-logo {
@@ -130,9 +132,7 @@ button {
 /*section hero*/
 .hero {
   background-color: #2e2f42;
-}
-.hero-container {
-  padding: 188px 316px;
+  padding: 188px 0;
 }
 .hero-h {
   font-weight: 700;
@@ -142,7 +142,8 @@ button {
   text-align: center;
   color: #fff;
   max-width: 496px;
-  margin-bottom: 48px;
+  display: block;
+  margin: 0 auto 48px auto;
 }
 .button-hero {
   background-color: #4d5ae5;
@@ -153,7 +154,9 @@ button {
   color: #fff;
   display: block;
   margin: 0 auto;
-  padding: 16px 32px;
+  /*padding: 16px 32px;*/
+  min-width: 169px;
+  min-height: 56px;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: none; /* щоб прибрати бордер дефолтний*/
@@ -194,7 +197,7 @@ button {
   gap: 24px;
 }
 .list-features-item {
-  width: calc((100%-24px * 3) / 4);
+  width: calc((100%-3 * 24px) / 4);
 }
 .list-header-features {
   font-weight: 500;
@@ -234,7 +237,7 @@ button {
 .team-img {
 }
 .team-content-container {
-  padding: 32px;
+  padding: 32px 0;
 }
 .team-header {
   font-weight: 500;
@@ -256,7 +259,7 @@ button {
 
 .our-portfolio {
   padding-top: 120px;
-  padding-bottom: 12px;
+  padding-bottom: 120px;
 }
 .our-portfolio-header {
   margin-bottom: 72px;
@@ -270,14 +273,12 @@ button {
   row-gap: 48px;
 }
 .portfolio-list {
-  width: calc((100%-24px * 2) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .portfolio-img {
 }
 .portfolio-content-container {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -303,18 +304,17 @@ button {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.container-text-footer {
-  max-width: 264px;
-}
 .footer .logo-style {
   color: #f4f4fd;
 }
 .footer .link-logo {
   margin-bottom: 16px;
+  display: inline-block;
 }
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 /*footer*/
